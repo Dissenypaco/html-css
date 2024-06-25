@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body{
+            width: 1200px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: auto;
+        }
+        header{
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color:gray;
+            padding: 8%;
+            box-shadow: 1px 1px 1px black ;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: normal;
+            margin-right: 4px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 20px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        article > aside {
+            background-color: gray;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            margin: 0px;
+            border-radius: 20px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Web Design - Wordpress</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias de Guell Design</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum ex minus temporibus animi  quidem ea. Quas, fuga architecto ratione sint dicta debitis vitae repudiandae voluptas similique obcaecati sequi ipsam! Iste!</p>
+                <aside>
+                    <p>Artigo escrito por Paco Petreñas</p>
+                </aside>
+
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Guell Design</p>
+
+    </footer>
+</body>
+</html>
