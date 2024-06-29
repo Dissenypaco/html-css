@@ -11,10 +11,16 @@
             width: 900px;
             border-collapse: collapse;
             font-family: Arial, Helvetica, sans-serif;
-        }        
+        }   
+        
+        caption{
+            font-size: 2em;
+            padding: 10px;
+            font-weight: bolder;
+        }
 
         td, th{
-            border: 1px solid black;
+            border: 1px solid rgb(0, 0, 0);
             font-size: 1.5em;
             padding: 10px;
         }
@@ -25,53 +31,57 @@
 <body>
 
     <table>
-        <tr>
-            <th>Grupo</th>
-            <th colspan="2">Nomes</th>
-            <th colspan="3">Filmes</th>
-        </tr>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th colspan="2" scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
 
-        <tr>
-            <th rowspan="3">Mulheres</th>
-            <td colspan="2">Ana Maria Santos</td>
-            <td>Alien</td>
-            <td>Rambo</td>
-            <td>Vingadores</td>
-        </tr>
-
-        <tr>
-            <td colspan="2">Beatriz Souza</td>
-            <td>Filmes</td>
-            <td>Filmes</td>
-            <td>Filmes</td>
-        </tr>
-        <tr>
-            <td colspan="2">Cláudia Melo</td>
-            <td>Filmes</td>
-            <td>Filmes</td>
-            <td>Filmes</td>
-        </tr>
-
-        <tr>
-            <th rowspan="3">Homens</th>
-            <td colspan="2">Ana Maria Santos</td>
-            <td>Alien</td>
-            <td>Rambo</td>
-            <td>Vingadores</td>
-        </tr>
-
-        <tr>
-            <td colspan="2">Beatriz Souza</td>
-            <td>Filmes</td>
-            <td>Filmes</td>
-            <td>Filmes</td>
-        </tr>
-        <tr>
-            <td colspan="2">Cláudia Melo</td>
-            <td>Filmes</td>
-            <td>Filmes</td>
-            <td>Filmes</td>
-        </tr>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td colspan="2">Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td colspan="2">Beatriz Souza</td>
+                <td>Filmes</td>
+                <td>Filmes</td>
+                <td>Filmes</td>
+            </tr>
+            <tr>
+                <td colspan="2">Cláudia Melo</td>
+                <td>Filmes</td>
+                <td>Filmes</td>
+                <td>Filmes</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td colspan="2">Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td colspan="2">Beatriz Souza</td>
+                <td>Filmes</td>
+                <td>Filmes</td>
+                <td>Filmes</td>
+            </tr>
+            <tr>
+                <td colspan="2">Cláudia Melo</td>
+                <td>Filmes</td>
+                <td>Filmes</td>
+                <td>Filmes</td>
+            </tr>
+        </tbody>
 
 
     </table>
