@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 006 - Controles Inputs: Color / Range / File</title>
+</head>
+<body>
+    <h1>Formulário 006 - Controles Inputs: Color / Range / File</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <h3>Input Color</h3>
+        <p>
+            <label for="icor">Cor:</label>
+
+            <!-- INPUT COLOR -->
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+
+        <h3>Input Range</h3>
+
+        <p>
+            <label for="inivel">Nível de Satisfação</label>
+
+            <!-- INPUT RANGE -->
+            <input type="range" name="nivel" id="inivel" min="1" max="10" value="2">
+        </p>
+
+        <h3>Input File</h3>
+
+        <p>
+            <label for="ifoto">Foto de Perfil</label>
+            <!-- INPUT FILE -->
+             <!-- O FORMULARIO TEM QUE SER METHOD GET -->
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
