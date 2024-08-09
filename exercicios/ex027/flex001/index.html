@@ -5,18 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FLEX BOX</title>
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        main{
+            width: 100vw;
+            height: 100vh;
+
+            align-content: center;
+        }
         div.container{
             background-color: aqua;
+            height: 60%;
             
             display: flex;
-            flex-direction: row;
-
+            flex-flow: row nowrap;
+            justify-content: center;
+            
         }
+
         div.filho{
             background-color: rgb(161, 161, 250);
-            padding: 10px;
             text-align: center;
-            border: solid 1px black;            
+            border: solid 1px black;
+            flex-basis: auto;
+            width: 14%;
+
+            align-content: center;
         }
         
     </style>
@@ -25,11 +41,11 @@
     <main>
         <div class="container">
            <div class="filho">A</div>
-           <div class="filho">B</div>
+           <div class="filho">Barcelona el mjor equipo del mundo</div>
            <div class="filho">C</div>
-           <div class="filho">D</div>
-           <div class="filho">E</div>
-           <div class="filho">F</div>
+           <div class="filho">el</div>
+           <div class="filho">El mejor</div>
+           <div class="filho">Equipo</div>
         </div>
     </main>
 </body>
