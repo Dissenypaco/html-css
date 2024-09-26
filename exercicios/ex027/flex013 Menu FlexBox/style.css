@@ -25,13 +25,13 @@ header{
 
 header h1{
     color: white;
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
 
     flex: 0 0 200px;
 }
 
 header > nav {
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
 
     display: flex;
     flex-flow: row wrap;
@@ -54,7 +54,7 @@ header > nav a{
 header > nav a:hover{
     background-color: #f95454;
     color: black;
-    transition: background-color .5s;
+    transition: background-color .8s;
     transform: translateY(-5px);
 }
 
